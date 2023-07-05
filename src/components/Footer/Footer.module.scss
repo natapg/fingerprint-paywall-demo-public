@@ -1,0 +1,44 @@
+.footer {
+  padding: 60px 7.5vw 70px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 24px;
+  @include media('<=desktop') {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    row-gap: 24px;
+  }
+  .footerWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 8px;
+    .icon {
+      width: 30px;
+      path {
+        fill: rgb(125, 125, 125);
+      }
+    }
+    .title {
+      @include inter-h1;
+      font-size: 16px;
+      color: rgb(125, 125, 125);
+
+      .chronicles {
+        font-weight: 100;
+      }
+    }
+  }
+  .copy {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(125, 125, 125);
+  }
+  .disclaimer {
+    .link {
+      color: v('github-orange-gradient');
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.progressBar {
+  height: 10px;
+  background: v('github-orange-gradient');
+  transform-origin: 0%;
+}
+
+.header {
+  z-index: 20;
+  position: absolute;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  @include media('>desktop') {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    transition: background-color 0.25s ease-out;
+    left: 0;
+    right: 0;
+  }
+
+  &.shadow {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .headerWrapper {
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 16px;
+    .icon {
+      width: 50px;
+    }
+  }
+  &.dark {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .title {
+    @include inter-h1;
+    .chronicles {
+      font-weight: 100;
+    }
+  }
+}

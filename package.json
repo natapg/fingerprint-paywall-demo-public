@@ -1,0 +1,60 @@
+{
+  "name": "fingerprint-firewall",
+  "version": "1.0.0",
+  "private": true,
+  "description": "fingerprint-firewall",
+  "author": "natapg",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit && eslint . --ext .ts,.tsx,.js",
+    "lint:ci": "tsc --noEmit && eslint . --ext .ts,.tsx,.js --max-warnings=0",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --quiet --fix",
+    "prettier": "prettier -c .",
+    "prettier:fix": "prettier --write --loglevel=error ."
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs-pro-react": "^2.3.0",
+    "@supabase/supabase-js": "^2.10.0",
+    "@svgr/webpack": "^7.0.0",
+    "@vercel/node": "^2.9.12",
+    "classnames": "^2.3.2",
+    "framer": "^2.3.0",
+    "framer-motion": "^10.1.0",
+    "gatsby": "^5.7.0",
+    "gatsby-plugin-image": "^3.7.0",
+    "gatsby-plugin-sass": "^6.7.0",
+    "gatsby-plugin-sharp": "^5.7.0",
+    "gatsby-plugin-sitemap": "^6.7.0",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
+    "gatsby-source-filesystem": "^5.7.0",
+    "gatsby-transformer-remark": "^6.7.0",
+    "gatsby-transformer-sharp": "^5.7.0",
+    "include-media": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "2.8.8",
+    "typescript": "^4.9.5"
+  }
+}

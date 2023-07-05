@@ -1,0 +1,142 @@
+.featuredSection {
+  margin-top: -5rem;
+  padding-top: 5rem;
+  position: relative;
+}
+.featuredImageWrapper {
+  @include media('<=desktop') {
+    height: 77.5vw !important;
+    left: -8.75vw !important;
+    right: -8.75vw !important;
+    width: auto !important;
+  }
+  &::after {
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 100%);
+    bottom: -1px;
+    content: '';
+    display: block;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+
+    @include media('>desktop') {
+      background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0) 100%);
+      top: 0;
+    }
+  }
+}
+.featuredNews {
+  @include media('>desktop') {
+    padding-top: 4.85vw;
+    padding-bottom: 6.25vw;
+  }
+  .content {
+    position: relative;
+    .contentBody {
+      padding-bottom: 1.25rem;
+
+      @include media('>desktop') {
+        padding-right: 34%;
+        min-height: 364px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      .mobile {
+        @include media('>desktop') {
+          display: none;
+        }
+        @include media('<=desktop') {
+          padding-bottom: 56.25%;
+        }
+      }
+      .today {
+        font-weight: 600;
+        margin-bottom: 24px;
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+      .title {
+        font-size: 48px;
+        max-width: 730px;
+        font-weight: 700;
+        line-height: 0.96;
+        letter-spacing: 1px;
+        .titleLink {
+          background-image: linear-gradient(180deg, transparent 87.5%, v('github-orange-gradient') 0%);
+          background-position: 0 -0.2125em;
+          background-size: 0 100%;
+          background-repeat: no-repeat;
+          transition: background-size 0.4s linear;
+          &:hover {
+            background-size: 100% 100%;
+          }
+        }
+
+        @include media('<=desktop') {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.visitorDataBox {
+  margin-bottom: 1.875rem;
+  margin-top: 0.875rem;
+  position: relative;
+
+  @include media('>desktop') {
+    bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    right: -3.75vw;
+  }
+
+  .visitorData {
+    padding: 40px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 16px solid v('github-orange-gradient');
+
+    @include media('<=1300px') {
+      padding: 30px 30px;
+    }
+  }
+  .visitorId,
+  .visitorSkeleton {
+    margin: 20px 0;
+  }
+  .articlesSkeleton {
+    position: relative;
+    display: inline-block;
+    top: 2px;
+  }
+}
+
+.button {
+  font-size: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  color: v('white');
+  background-color: v('github-orange-gradient');
+  border: solid 1px v('github-orange-gradient');
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 150%;
+  transition: background-color 0.25s ease-out, border 0.25s ease-out;
+
+  &:hover {
+    background-color: #e4693c;
+    border: solid 1px #e4693c;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #fcac8f;
+    border: solid 1px #fcac8f;
+    color: #fff;
+  }
+}

@@ -1,0 +1,13 @@
+html {
+  background: v('black');
+}
+body {
+  margin: 0;
+  color: v('white');
+  font-family: v(ff-inter);
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}

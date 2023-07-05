@@ -1,0 +1,32 @@
+$colors: (
+  'black': hsla(0, 0%, 0%, 1),
+  'white': #fafafa,
+  'off-white': hsl(240, 24%, 96%),
+  'white-light': hsl(0, 0%, 98%),
+  'transparent': hsla(0, 0%, 100%, 0),
+  'error': hsl(358, 93%, 66%),
+  'warning': hsl(42, 100%, 52%),
+  'success': hsl(131, 70%, 46%),
+  'gray': #5b5b5b,
+  //#434344
+  'dark-gray': hsl(240, 1%, 26%),
+  //DarkMode/Black
+  'dark-black': #141415,
+  'dark': #202021,
+  //#FAFAFA
+  'github-orange': hsl(8, 89%, 63%),
+  //#FF5D22 Orange/Main Light Mode
+  'github-orange-gradient': hsl(16, 100%, 57%),
+  // Orange/Main Dark Mode
+  'github-orange-dark': #fa7545,
+);
+
+$grid-base: 8px;
+
+$breakpoints: (
+  phone: 420px,
+  phoneLandscape: 640px,
+  tablet: 768px,
+  tabletWide: 860px,
+  desktop: 1024px,
+);
